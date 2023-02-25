@@ -130,8 +130,6 @@ def preprocess(q):
     q = re.sub(r'([0-9]+)000', r'\1k', q)
 
     # Decontracting words
-    # https://en.wikipedia.org/wiki/Wikipedia%3aList_of_English_contractions
-    # https://stackoverflow.com/a/19794953
     contractions = {
         "ain't": "am not",
         "aren't": "are not",
